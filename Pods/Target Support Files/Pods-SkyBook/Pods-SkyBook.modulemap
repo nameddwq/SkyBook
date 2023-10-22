@@ -1,0 +1,6 @@
+framework module Pods_SkyBook {
+  umbrella header "Pods-SkyBook-umbrella.h"
+
+  export *
+  module * { export * }
+}

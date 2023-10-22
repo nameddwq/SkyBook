@@ -1,0 +1,6 @@
+framework module Pods_SkyBookTests {
+  umbrella header "Pods-SkyBookTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

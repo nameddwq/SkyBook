@@ -11,9 +11,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .sbMain
     }
 
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let num = arc4random_uniform(100)
+        if (num % 2 == 0) {
+            tabBarItem.badgeValue = String(format: "%d", num)
+        } else {
+            tabBarItem.badgeValue = nil
+        }
+    }
 }
 
